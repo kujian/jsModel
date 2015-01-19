@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tool>
+	<node id="face">
+		<x>0</x>
+		<y>0</y>
+		<title>表情</title>
+	</node>
+	<node id="image">
+		<x>-27</x>
+		<y>-25</y>
+		<title>图片</title>
+	</node>
+	<node id='video'>
+		<x>0</x>
+		<y>-25</y>
+		<title>视频</title>
+	</node>
+	<node id='topic'>
+		<x>-25</x>
+		<y>0</y>
+		<title>话题</title>
+	</node>
+</tool>

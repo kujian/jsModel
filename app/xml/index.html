@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jsModel - 解析 xml 文件或字符串</title>
+</head>
+<body>
+	请打开浏览器的"开发者工具"查看输出结果
+	<pre>
+	标题个数：2
+	第1个标题的内容:标题1
+	第2个标题的内容:标题2
+	使用同步方式加载解析xml文件，可能会阻塞浏览器
+	9
+	使用异步方式加载解析xml文件，需要传递一个回调函数
+	9 
+	</pre>
+</body>
+<!-- 注意以下路径设置 -->
+<script src='../../sea-modules/sea.js'></script>
+<script src='../jsModel.js'></script>
+<script type='text/javascript'>
+	seajs.use("./xml.js");
+</script>
+</html>

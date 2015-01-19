@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jsModel - lazyload图片延迟下载</title>
+<style type="text/css">
+img{
+	width:100%;/* 重要，否则lazyload没有效果*/
+}
+</style>
+</head>
+<body>
+	<div style='text-align:center;'>
+		<div><img class='lazy'  data-original='http://car0.autoimg.cn/upload/2014/8/25/u_20140825233441605510411.jpg'/></div>
+		<div><img class='lazy'  data-original='http://car0.autoimg.cn/upload/2014/8/25/u_20140825233453675510410.jpg'/></div>
+		<div><img class='lazy'  data-original='http://img1.xcarimg.com/b59/s1839/m_20100716165418454323.jpg'/></div>
+		<div><img class='lazy'  data-original='http://img1.xcarimg.com/b59/s1839/m_20100716165425454329.jpg' /></div>
+		<div><img class='lazy'  data-original='http://car0.autoimg.cn/upload/2014/8/25/u_20140825233432365510410.jpg'/></div>
+		<div><img class='lazy'  data-original='http://car0.autoimg.cn/upload/2014/8/25/u_20140825233353167510411.jpg' /></div>
+	</div>
+
+</body>
+<!-- 注意以下路径设置 -->
+<script src='../../sea-modules/sea.js'></script>
+<script src='../jsModel.js'></script>
+<script type='text/javascript'>
+	seajs.use("./lazyload.js");
+</script>
+</html>

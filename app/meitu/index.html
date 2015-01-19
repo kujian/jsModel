@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jsModel - 美图秀秀网页版</title>
+</head>
+<body>
+
+<!-- 美图秀秀网页版：开始 -->
+<div>注意，你需要将 ./core/crossdomain.xml 文件放置到图片服务器根目录下 </div>
+<div id="u-meitu-open"></div> <!-- 按钮，点击后出现拼图面板 -->
+<div id="photo_merge_panel">
+	<div id="altContent"></div><!-- 此div用于替换拼图面板 -->
+</div>
+<div id="m-uploadImageResult"><!-- 可选：用来显示已上传的图片，同swfupload -->
+	<ul id="m-uploadImageResult-ul"></ul>
+</div
+<!-- 美图秀秀网页版：结束 -->
+</body>
+<script src='../../sea-modules/sea.js'></script>
+<script src='../jsModel.js'></script>
+<script type='text/javascript'>
+	// 美图网页版图片上传文件路径，默认为表单上传，请自行修改
+	window.meituProcessUrl = location.href.substr(0,location.href.length-6)+"swfupload/swfupload.php";
+	seajs.use("./meitu.js");
+</script>
+</html>

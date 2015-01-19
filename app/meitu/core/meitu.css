@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+#u-meitu-open{
+	width:144px;height:22px;
+	background:url(./button.png) no-repeat;
+}
+#u-meitu-open:hover{
+	background:url(./buttonhover.png) no-repeat;
+}
+#photo_merge_panel{
+	z-index: 20000;
+	position: absolute;
+}
+/* 显示上传图片样式，同 swfupload*/
+#m-uploadImageResult{
+	width:320px;
+background: #ddd;
+}
+#m-uploadImageResult-ul{
+list-style: none;
+overflow: hidden;
+padding-left: 0;
+}
+#m-uploadImageResult-ul li{
+	float:left;
+	background:#eee;
+	padding:1px;
+	margin:1px;
+	width:100px;
+}
+#m-uploadImageResult-ul li img{
+	width:100px;
+}
+.removeUploadImage{
+	text-align: center;
+display: block;
+font-size: 13px;
+padding: 2px;
+}
+.removeUploadImage:hover{
+	color: #936A13;
+	cursor:pointer;
+}

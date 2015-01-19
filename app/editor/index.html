@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jsModel - 仿新浪微博编辑器</title>
+</head>
+<body>
+
+	<div class="g-weibo">
+		<div class='m-weibo-count'>还可以输入<span id='u-weibo-word'>140</span>字</div>
+		<textarea class='m-weibo-content' id="content">仿新浪微博编辑器，因为使用到jQuery ajax功能，所以需要在服务上使用，只在Chrome,Firefox,IE9下简单测试过，不支持IE7。使用到swfupload,meitu,xml</textarea>
+		<div class="m-weibo-tool" id="weibo-tool"></div><!-- 工具栏：表情、图片、视频等 -->
+		<!-- 表情、图片的子项：开始 -->		
+		<div class="m-layer" style="display: none;"><div class="closeFace">X</div></div>
+		<!-- 表情、图片的子项：结束 -->
+		<div id="photo_merge_panel"><div id="altContent"></div></div><!-- 美图秀秀网页版，拼图面板 -->
+		<div id="m-uploadImageResult">
+			<ul id="m-uploadImageResult-ul"><!-- 可选：用来显示已上传的图片，此注释用于解决ie7下空div高度不为0的bug--></ul>
+		</div>
+		<div id="g-weibo-other"></div><!-- 存放一些组件代码 -->
+	</div>
+		
+		
+		
+</body>
+<script src='../../sea-modules/sea.js'></script>
+<script src='../jsModel.js'></script>
+<script type='text/javascript'>
+	// 美图网页版图片上传文件路径，请自行修改
+	window.meituProcessUrl = location.href.substr(0,location.href.length-6)+"swfupload/swfupload.php";
+	seajs.use("./editor.js");
+</script>
+</html>
