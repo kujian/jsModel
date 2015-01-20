@@ -1,6 +1,6 @@
 define(function(require,exports,module){
 	// 加载xml库
-	var XML = require('../../library/xml.js');
+	var XML = require('library/xml.js');
 	
 	// 字符串方法
 	$xmlString = XML.loadXMLString("<rss version='2.0'><channel><title>标题1</title></channel><channel><title>标题2</title></channel></rss>");

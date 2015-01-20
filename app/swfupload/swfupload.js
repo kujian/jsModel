@@ -6,10 +6,9 @@ define(function(require,exports,module){
 	else
 		window.swfupload.href = location.href.substring(0,location.href.lastIndexOf('/')); 
 	
-	$ = require('../../sea-modules/jquery-1.7.js');//1.7版本，支持动态绑定
-	require('../../sea-modules/seajs-css.js');// 使用css插件
-	
-	seajs.use(window.swfupload.href+"/core/swfupload.css");
+	$ = require('core/jquery-1.7.js');//1.7版本，支持动态绑定
+	require('core/seajs-css.js');// 使用css插件
+
 	require('./core/swfupload.js');
 	require('./core/swfupload.queue.js');
 	require('./core/fileprogress.js');

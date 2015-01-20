@@ -1,8 +1,8 @@
 define(function(require,exports,module){
-	var Editor = require('../../library/mouseKeyboard.js');
-	var XML = require('../../library/xml.js');
+	var Editor = require('library/mouseKeyboard.js');
+	var XML = require('library/xml.js');
 	require('jquery');
-	require('../../sea-modules/seajs-css.js');// 使用css插件
+	require('core/seajs-css.js');// 使用css插件
 	seajs.use("./core/default.css");
 	window.weiboToolAction = {};//用于挂载工具栏点击事件
 	var editorPath = typeof(window.editorPath)!="undefined"? window.editorPath : './core/'; //自行修改路径
@@ -41,11 +41,16 @@ define(function(require,exports,module){
 
 	// 点击表情的时候，显示表情图片
 	window.weiboToolAction.face = function(){
-		jQuery(".m-layer").eq(0).show();
-		if (jQuery("#layer_face").text().length < 1){
-			jQuery('#layer_face').html('<div id="u-face-nodes"></div><div id="u-face-content"></div>');
-			XML.loadXMLFileAsync(editorPath+"dialogs/face.xml",createToolface);
-		}
+		console.log('显示表情')
+		jQuery('.m-layer').show();
+		jQuery('.u-layer-node').hide();
+		jQuery('#layer_face').show();
+		if (jQuery('#layer_face').attr('data-show')==1)
+			return;
+		
+		jQuery('#layer_face').html('<div id="u-face-nodes"></div><div id="u-face-content"></div>');
+		XML.loadXMLFileAsync(editorPath+"dialogs/face.xml",createToolface);
+		jQuery('#layer_face').attr('data-show',1);
 	};
 	// 当前显示表情索引
 	window.weiboCurrentFaceNodeIndex = 0;

@@ -20,8 +20,7 @@ define(function(require, exports, module) {
 	window.meitu.editorHeight = 470;
 	
 	// require('http://open.web.meitu.com/sources/xiuxiu.js'); 原版，已被下载到本地
-	require('../../sea-modules/seajs-css.js');// 使用css插件
-	seajs.use(window.meitu.href+"/core/meitu.css");
+	require('core/seajs-css.js');// 使用css插件
 	
 	require('jquery');
 	require('./core/xiuxiu.js');
