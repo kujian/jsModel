@@ -10,6 +10,9 @@ jsModel
 |-------- /meitu 美图秀秀网页版
 |-------- /swfupload 图片批量上传
 |-------- /xml xml文件及字符串处理
+|-------- /qrcode 生成二维码
+|-------- /My97DatePicker 日期时间控件
+|-------- /jscolor 颜色选择控件
 |-- /library 收集的第3方通用操作库
 |-- /sea-modules seajs 官方文件
 |-- index.html 示例入口
