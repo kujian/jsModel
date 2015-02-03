@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery One Page Scroll by Pete R. | The Pete Design</title>
+<meta name="author" content="Pete R.">
+<style>
+.wrapper {
+	height: 100% !important;
+	height: 100%;
+	margin: 0 auto; 
+	overflow: hidden;
+}
+.main {
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+}
+.main section {
+	overflow: hidden;
+}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main">
+			<section> SECTION 1</section>
+			<section> SECTION 2</section>
+			<section> SECTION 3</section>
+		</div>
+	</div>
+</body>
+<script src='../../sea-modules/sea.js'></script>
+<script src='../jsModel.js'></script>
+<script type='text/javascript'>
+	seajs.use("./onepagescroll.js");
+</script>
+</html>
