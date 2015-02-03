@@ -13,6 +13,9 @@ jsModel
 |-------- /qrcode 生成二维码
 |-------- /My97DatePicker 日期时间控件
 |-------- /jscolor 颜色选择控件
+|-------- /scrollUp 返回顶部插件 scrollUp
+|-------- /anylistscroller 循环滚动插件 any list scroller
+|-------- /onepagescroll jQuery单页/全屏滚动插件 - onepage-scroll
 |-- /library 收集的第3方通用操作库
 |-- /sea-modules seajs 官方文件
 |-- index.html 示例入口
